@@ -3,7 +3,7 @@ export class Dollar {
   constructor(amount: number) {
     this.amount = amount
   }
-  public times(multiplier) {
-    this.amount = this.amount * 2
+  public times(multiplier: number) {
+    this.amount = this.amount * multiplier
   }
 }
