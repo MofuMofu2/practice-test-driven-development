@@ -1,4 +1,4 @@
-import { Dollar } from '../../src/model/money'
+import { Dollar } from '../../src/model/dollar'
 import { Franc } from '../../src/model/franc'
 
 describe('通貨の計算に関するテスト', () => {
@@ -11,6 +11,8 @@ describe('通貨の計算に関するテスト', () => {
   it('別名参照されていないことを確認するテスト', () => {
     expect(new Dollar(5).equals(new Dollar(5))).toBe(true)
     expect(new Dollar(5).equals(new Dollar(6))).toBe(false)
+    expect(new Franc(5).equals(new Franc(5))).toBe(true)
+    expect(new Franc(5).equals(new Franc(6))).toBe(false)
   });
 
   it('異なる通貨の足し算に関するテスト', () => {
