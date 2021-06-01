@@ -4,7 +4,7 @@ export class Money{
     this.amount = amount
   }
   equals(obj: Money) {
-    const dollar = obj;
-    return this.amount === dollar.amount;
+    const money = obj;
+    return this.amount === money.amount;
   }
 }
