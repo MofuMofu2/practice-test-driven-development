@@ -1,4 +1,4 @@
-import { Dollar } from '../../src/model/money'
+import { Dollar } from '../../src/model/dollar'
 import { Franc } from '../../src/model/franc'
 
 describe('通貨の計算に関するテスト', () => {
