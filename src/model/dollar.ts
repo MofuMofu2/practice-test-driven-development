@@ -7,8 +7,4 @@ export class Dollar extends Money {
   times(multiplier: number) {
     return new Dollar(this.amount * multiplier)
   }
-  equals(obj: Dollar) {
-    const dollar = obj;
-    return this.amount === dollar.amount;
-  }
 }
