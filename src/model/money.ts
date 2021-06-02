@@ -5,6 +5,7 @@ export class Money{
   }
   equals(obj: Money) {
     const money = obj;
-    return this.amount === money.amount;
+    return this.amount === money.amount
+      && this.constructor.name === money.constructor.name;
   }
 }
