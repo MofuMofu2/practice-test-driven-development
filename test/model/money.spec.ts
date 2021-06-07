@@ -1,6 +1,6 @@
 import { Dollar } from '../../src/model/dollar'
-import { Money } from '../../src/model/money'
 import { Franc } from '../../src/model/franc'
+import { Money } from '../../src/model/money'
 
 describe('通貨の計算に関するテスト', () => {
   it('掛け算ができること', () => {
