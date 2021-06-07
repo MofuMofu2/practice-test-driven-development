@@ -1,10 +1,11 @@
 import { Dollar } from "./dollar";
 
-export class Money{
+export abstract class Money{
   amount: number
   constructor(amount: number) {
     this.amount = amount
   }
+  abstract times(multiplier: number)
   equals(obj: Money) {
     const money = obj;
     return this.amount === money.amount
