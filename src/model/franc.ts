@@ -1,4 +1,4 @@
-import { Money } from "./money";
+import { Money } from "../internal";
 
 export class Franc extends Money {
   constructor(amount: number) {

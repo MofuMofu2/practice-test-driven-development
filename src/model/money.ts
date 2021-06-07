@@ -1,5 +1,5 @@
-import { Dollar } from "./dollar";
-import { Franc } from "./franc";
+import { Dollar } from "../internal";
+import { Franc } from "../internal";
 
 export abstract class Money{
   amount: number
