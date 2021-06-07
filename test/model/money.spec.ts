@@ -1,9 +1,10 @@
 import { Dollar } from '../../src/model/dollar'
+import { Money } from '../../src/model/money'
 import { Franc } from '../../src/model/franc'
 
 describe('通貨の計算に関するテスト', () => {
   it('掛け算ができること', () => {
-    const five = new Dollar(5)
+    const five: Money = Money.dollar(5)
     expect(new Dollar(10)).toEqual(five.times(2))
     expect(new Dollar(15)).toEqual(five.times(3))
   });
