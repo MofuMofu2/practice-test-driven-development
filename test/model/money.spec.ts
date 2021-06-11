@@ -22,4 +22,9 @@ describe('通貨の計算に関するテスト', () => {
     expect(Money.franc(10)).toEqual(five.times(2))
     expect(Money.franc(15)).toEqual(five.times(3))
   });
+
+  it('通貨を表現するクラスのテスト', () => {
+    expect(Money.dollar(1).currency()).toBe('USD')
+    expect(Money.franc(1).currency()).toBe('CHF')
+  });
 });
