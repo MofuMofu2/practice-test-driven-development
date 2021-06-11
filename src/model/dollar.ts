@@ -1,7 +1,7 @@
 import { Money } from "../internal";
 
 export class Dollar extends Money {
-  private currency: String
+  
   constructor(amount: number) {
     super(amount)
     this.currency = 'USD'

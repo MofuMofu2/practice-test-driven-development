@@ -24,7 +24,7 @@ describe('通貨の計算に関するテスト', () => {
   });
 
   it('通貨を表現するクラスのテスト', () => {
-    expect(Money.dollar(1).currency()).toBe('USD')
-    expect(Money.franc(1).currency()).toBe('CHF')
+    expect(Money.dollar(1).currencyType()).toBe('USD')
+    expect(Money.franc(1).currencyType()).toBe('CHF')
   });
 });

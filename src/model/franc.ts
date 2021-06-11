@@ -1,7 +1,6 @@
 import { Money } from "../internal";
 
 export class Franc extends Money {
-  private currency: String
   constructor(amount: number) {
     super(amount)
     this.currency = 'CHF'
