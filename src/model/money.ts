@@ -7,6 +7,7 @@ export abstract class Money{
     this.amount = amount
   }
   abstract times(multiplier: number)
+  abstract currency(): String
   equals(obj: Money) {
     const money = obj;
     return this.amount === money.amount
